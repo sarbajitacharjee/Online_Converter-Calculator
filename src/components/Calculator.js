@@ -10,9 +10,10 @@ const Calculator = () => {
   useEffect(() => {
     if (tiltRef.current) {
       VanillaTilt.init(tiltRef.current, {
-        max: 25,
-        speed: 400,
+        max: 24,
+        speed: 800,
         glare: true,
+        // scale:1.2,
         "max-glare": 0.5,
       });
     }
@@ -35,7 +36,7 @@ const Calculator = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-purple-900 to-red-600">
       <div ref={tiltRef} className="bg-white bg-opacity-10 rounded-lg p-4 backdrop-blur-md shadow-lg">
-        <h1 className=''>Simple Calculator</h1>
+        <h1 className='text-center text-lg'>Simple Calculator</h1>
         <form name="calc" className="grid grid-cols-4 gap-2">
           <input
             type="text"
