@@ -1,5 +1,5 @@
 /* eslint-disable no-eval */
-// src/components/Calculator.js
+
 import React, { useState, useEffect, useRef } from 'react';
 import VanillaTilt from 'vanilla-tilt';
 
@@ -34,7 +34,7 @@ const Calculator = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-purple-900 to-red-600">
+    <div className="flex flex-col justify-center items-center min-h-screen bg-gradient-to-r from-purple-900 to-red-600">
       <div ref={tiltRef} className="bg-white bg-opacity-10 rounded-lg p-4 backdrop-blur-md shadow-lg">
         <h1 className='text-center text-lg'>Simple Calculator</h1>
         <form name="calc" className="grid grid-cols-4 gap-2">
@@ -54,63 +54,63 @@ const Calculator = () => {
           <button
             type="button"
             onClick={() => handleClick('/')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             /
           </button>
           <button
             type="button"
             onClick={() => handleClick('*')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             *
           </button>
           <button
             type="button"
             onClick={() => handleClick('7')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             7
           </button>
           <button
             type="button"
             onClick={() => handleClick('8')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             8
           </button>
           <button
             type="button"
             onClick={() => handleClick('9')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             9
           </button>
           <button
             type="button"
             onClick={() => handleClick('-')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             -
           </button>
           <button
             type="button"
             onClick={() => handleClick('4')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             4
           </button>
           <button
             type="button"
             onClick={() => handleClick('5')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             5
           </button>
           <button
             type="button"
             onClick={() => handleClick('6')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             6
           </button>
@@ -124,35 +124,35 @@ const Calculator = () => {
           <button
             type="button"
             onClick={() => handleClick('1')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             1
           </button>
           <button
             type="button"
             onClick={() => handleClick('2')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             2
           </button>
           <button
             type="button"
             onClick={() => handleClick('3')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             3
           </button>
           <button
             type="button"
             onClick={() => handleClick('0')}
-            className="col-span-2 bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="col-span-2 bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             0
           </button>
           <button
             type="button"
             onClick={() => handleClick('.')}
-            className="bg-gray-700 text-white font-bold p-4 rounded hover:bg-gray-800"
+            className="bg-gray-800 text-white font-bold p-4 rounded hover:bg-gray-900"
           >
             .
           </button>
@@ -164,8 +164,8 @@ const Calculator = () => {
             =
           </button>
         </form>
-      <h1 className='sm:hidden block'><span style={{color:"white"}}>Note: </span> Curve Your mobile to see effect </h1>
       </div>
+      <h1 className='sm:hidden block' style={{color:"white"}}>Note: Curve Your Handset to see effect </h1>
     </div>
   );
 };
