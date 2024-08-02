@@ -164,6 +164,7 @@ const Calculator = () => {
             =
           </button>
         </form>
+      <h1 className='sm:hidden block'><span style={{color:"white"}}>Note: </span> Curve Your mobile to see effect </h1>
       </div>
     </div>
   );
