@@ -80,21 +80,21 @@ const TextConverter = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-[#45dfdf] to-[#236c84] flex items-center justify-center">
-      <div className=" p-10 rounded-lg shadow-lg w-full max-w-3xl">
-        <h1 className="text-3xl animate-pulse font-bold text-center mb-8 text-black">
+    <div className="min-h-screen bg-gradient-to-r from-[#45dfdf] to-[#236c84] flex items-center justify-center p-4 sm:p-6 lg:p-8">
+      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl">
+        <h1 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-black">
           Text Converter
         </h1>
         <textarea
-          className="w-full p-4 text-lg border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          className="w-full p-3 text-base sm:text-lg border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-400"
           rows="4"
           placeholder="Enter your text here..."
           value={inputText}
           onChange={handleInputChange}
         ></textarea>
-        <div className="flex justify-between mb-4">
+        <div className="flex flex-col sm:flex-row justify-between mb-4 space-y-4 sm:space-y-0 sm:space-x-4">
           <select
-            className="p-3 bg-gray-100 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="p-3 bg-gray-100 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 w-full sm:w-auto"
             value={fontStyle}
             onChange={handleFontChange}
           >
@@ -110,73 +110,73 @@ const TextConverter = () => {
             <option value="Garamond">Garamond</option>
           </select>
 
-          <div className="space-x-4">
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-auto">
             <button
-              className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700"
+              className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 w-full sm:w-auto"
               onClick={downloadPDF}
             >
               Download PDF
             </button>
             <button
-              className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700"
+              className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 w-full sm:w-auto"
               onClick={downloadDOCX}
             >
               Download DOCX
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-4 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
           <button
-            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700"
+            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             onClick={toUpperCase}
           >
             Uppercase
           </button>
           <button
-            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700"
+            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             onClick={toLowerCase}
           >
             Lowercase
           </button>
           <button
-            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700"
+            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             onClick={capitalizeWords}
           >
             Capitalize Words
           </button>
           <button
-            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700"
+            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             onClick={reverseText}
           >
             Reverse Text
           </button>
           <button
-            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700"
+            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             onClick={removeExtraSpaces}
           >
             Remove Extra Spaces
           </button>
           <button
-            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700"
+            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             onClick={countCharacters}
           >
             Count Characters
           </button>
           <button
-            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700"
+            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             onClick={countWords}
           >
             Count Words
           </button>
           <button
-            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700"
+            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             onClick={countSentences}
           >
             Count Sentences
           </button>
         </div>
         <textarea
-          className={`w-full p-4 text-lg border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 ${fontStyle}`}
+          className={`w-full p-3 text-base sm:text-lg border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 ${fontStyle}`}
           style={{ fontFamily: fontStyle }}
           rows="4"
           placeholder="Your output will appear here..."
