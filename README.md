@@ -14,6 +14,23 @@ Welcome to **My Converter App**! This application is a versatile converter tool 
 - **License Information**
 - **Dependencies Overview**
 
+## Screenshots
+
+### Home Page
+
+![Home Page Screenshot](public/home.png)
+
+### Calculator Page
+
+![Conversion Page Screenshot](public/calc.png)
+### Conversion Page
+
+![Conversion Page Screenshot](public/Converter.png)
+
+### Text Transform Feature
+
+![Text Feature Screenshot](public/Text.png)
+
 You can copy and paste this `README.md` content into your project, making sure to update the live demo link and repository URL as needed.
 
 
