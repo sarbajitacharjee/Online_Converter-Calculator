@@ -8,8 +8,10 @@ import Area from '../components/Area';
 
 function Unit() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-red-600 to-yellow-500 flex flex-col items-center p-4">
-      <h1 className="text-4xl font-extrabold mb-8 text-black animate-pulse">Unit Converters</h1>
+    <div className="min-h-screen bg-gradient-to-r from-red-600 to-yellow-500 flex flex-col items-center p-4 sm:p-6 lg:p-8">
+      <h1 className="text-3xl sm:text-4xl font-extrabold mb-8 text-black animate-pulse text-center">
+        Unit Converters
+      </h1>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
         <div className="flex flex-col items-center w-full">
@@ -23,8 +25,7 @@ function Unit() {
         <div className="flex flex-col items-center w-full">
           <Weight />
         </div>
-        
-        {/* Add more components if needed */}
+
         <div className="flex flex-col items-center w-full">
           <Time />
         </div>
