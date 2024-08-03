@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import CalculatorPage from './pages/CalculatorPage';
 import TextConverterPage from './pages/TextConverterPage';
 import UnitConverterPage from './pages/UnitConverterPage';
+import Imagetext from './pages/ImageText';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/calculator" element={<CalculatorPage />} />
         <Route path="/text-converter" element={<TextConverterPage />} />
         <Route path="/unit-converter" element={<UnitConverterPage />} />
+        <Route path="/img-converter" element={<Imagetext />} />
       </Routes>
     </Router>
   );

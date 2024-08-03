@@ -82,7 +82,7 @@ const TextConverter = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#45dfdf] to-[#236c84] flex items-center justify-center">
       <div className=" p-10 rounded-lg shadow-lg w-full max-w-3xl">
-        <h1 className="text-3xl font-bold text-center mb-8 text-black">
+        <h1 className="text-3xl animate-pulse font-bold text-center mb-8 text-black">
           Text Converter
         </h1>
         <textarea

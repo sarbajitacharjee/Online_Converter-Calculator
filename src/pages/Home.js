@@ -28,6 +28,12 @@ const Home = () => {
         >
           Unit Converter
         </Link>
+        <Link
+          to="/img-converter"
+          className="block px-8 py-3 bg-white text-black font-semibold rounded-full shadow-lg transform transition hover:scale-105 hover:bg-gray-100"
+        >
+          Image Converter
+        </Link>
       </div>
       <div className="absolute bottom-5 text-xs text-gray-200">
         ©  Sarbajit Acharjee,2024
