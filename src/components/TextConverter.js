@@ -48,8 +48,7 @@ const TextConverter = () => {
 
   const countSentences = () => {
     setOutputText(
-      `Sentence Count: ${inputText.split(/[.!?]+/).filter(Boolean).length}`
-    );
+      `Sentence Count: ${inputText.split(/[.!?]+/).filter(Boolean).length}`);
   };
 
   const downloadPDF = () => {
@@ -82,12 +81,12 @@ const TextConverter = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#45dfdf] to-[#236c84] flex items-center justify-center p-4 sm:p-6 lg:p-8">
       <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-3xl">
-        <h1 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-black">
+        <h1 className="text-2xl sm:text-3xl font-bold hover:animate-ping text-center mb-6 text-black">
           Text Converter
         </h1>
         <textarea
           className="w-full p-3 text-base sm:text-lg border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-          rows="4"
+          rows="5"
           placeholder="Enter your text here..."
           value={inputText}
           onChange={handleInputChange}
@@ -178,7 +177,7 @@ const TextConverter = () => {
         <textarea
           className={`w-full p-3 text-base sm:text-lg border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 ${fontStyle}`}
           style={{ fontFamily: fontStyle }}
-          rows="4"
+          rows="5"
           placeholder="Your output will appear here..."
           value={outputText}
           readOnly
