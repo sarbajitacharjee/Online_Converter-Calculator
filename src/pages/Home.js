@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Qna from '../components/Qna.jsx'
 
 const Home = () => {
   return (
@@ -35,9 +36,11 @@ const Home = () => {
           Image Converter
         </Link>
       </div>
+      <Qna />
       <div className="absolute bottom-5 text-xs text-gray-200">
         ©  Sarbajit Acharjee,2024
       </div>
+
     </div>
   );
 };
