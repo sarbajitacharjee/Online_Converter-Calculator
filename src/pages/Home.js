@@ -13,7 +13,7 @@ const Home = () => {
       <div className="space-y-6">
         <Link
           to="/calculator"
-          className="block px-8 py-3 bg-white text-black font-semibold rounded-full shadow-lg transform transition hover:scale-105 hover:bg-gray-100"
+          className="block px-8 py-3 bg-white text-black font-semibold rounded-full shadow-lg text-center transform transition hover:scale-105 hover:bg-gray-100"
         >
           Calculator
         </Link>
@@ -37,7 +37,7 @@ const Home = () => {
         </Link>
       </div>
       <Qna />
-      <div className="absolute bottom-5 text-xs text-gray-200">
+      <div className="absolute bottom-5 text-xs text-gray-900">
         ©  Sarbajit Acharjee,2024
       </div>
 
