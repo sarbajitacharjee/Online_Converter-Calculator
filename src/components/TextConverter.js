@@ -85,7 +85,7 @@ const TextConverter = () => {
           Text Converter
         </h1>
         <textarea
-          className="w-full p-3 text-base sm:text-lg border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          className="w-full p-3 bg-gray-200 text-base sm:text-lg border rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-indigo-400"
           rows="5"
           placeholder="Enter your text here..."
           value={inputText}
@@ -175,7 +175,7 @@ const TextConverter = () => {
           </button>
         </div>
         <textarea
-          className={`w-full p-3 text-base sm:text-lg border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 ${fontStyle}`}
+          className={`w-full p-3 bg-gray-200 text-base sm:text-lg border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 ${fontStyle}`}
           style={{ fontFamily: fontStyle }}
           rows="5"
           placeholder="Your output will appear here..."

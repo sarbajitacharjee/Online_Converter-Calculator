@@ -37,7 +37,7 @@ const Home = () => {
         </Link>
       </div>
       <Qna />
-      <div className=" bottom-5 text-xs text-gray-900">
+      <div className=" bottom-5 text-lg text-gray-900">
         ©  Sarbajit Acharjee,2024
       </div>
 
