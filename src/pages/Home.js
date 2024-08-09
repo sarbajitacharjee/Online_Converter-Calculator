@@ -35,6 +35,12 @@ const Home = () => {
         >
           Image Converter
         </Link>
+        <Link
+          to="/Stopwatch"
+          className="block px-8 py-3 bg-white text-black font-semibold rounded-full shadow-lg transform transition hover:scale-105 hover:bg-gray-100"
+        >
+          Stop Watch
+        </Link>
       </div>
       <Qna />
       <div className=" bottom-5 text-md text-gray-900">

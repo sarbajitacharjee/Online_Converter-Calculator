@@ -6,7 +6,7 @@ import CalculatorPage from './pages/CalculatorPage';
 import TextConverterPage from './pages/TextConverterPage';
 import UnitConverterPage from './pages/UnitConverterPage';
 import Imagetext from './pages/ImageText';
-
+import Stopwatch from './pages/Stopwatch';
 function App() {
   return (
     <Router>
@@ -16,6 +16,7 @@ function App() {
         <Route path="/text-converter" element={<TextConverterPage />} />
         <Route path="/unit-converter" element={<UnitConverterPage />} />
         <Route path="/img-converter" element={<Imagetext />} />
+        <Route path="/Stopwatch" element={<Stopwatch />} />
       </Routes>
     </Router>
   );
