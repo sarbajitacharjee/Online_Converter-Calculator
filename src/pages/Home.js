@@ -37,7 +37,7 @@ const Home = () => {
         </Link>
         <Link
           to="/Stopwatch"
-          className="block px-8 py-3 bg-white text-black font-semibold rounded-full shadow-lg transform transition hover:scale-105 hover:bg-gray-100"
+          className="block px-8 py-3 text-center bg-white text-black font-semibold rounded-full shadow-lg transform transition hover:scale-105 hover:bg-gray-100"
         >
           Stop Watch
         </Link>
