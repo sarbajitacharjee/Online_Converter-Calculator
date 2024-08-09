@@ -51,6 +51,18 @@ const TextConverter = () => {
       `Sentence Count: ${inputText.split(/[.!?]+/).filter(Boolean).length}`);
   };
 
+  const countVowel = () =>{
+    const vowels ="AEIOUaeiou";
+    let count = 0;
+    
+    for(let char of inputText){
+      if(vowels.includes(char)){
+        count++;
+      }
+    }
+    setOutputText(`Vowel Count: ${count}`);
+  }
+
   const downloadPDF = () => {
     const doc = new jsPDF();
     doc.setFont(fontStyle);
@@ -172,6 +184,12 @@ const TextConverter = () => {
             onClick={countSentences}
           >
             Count Sentences
+          </button>
+          <button
+            className="bg-indigo-600 text-white p-3 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            onClick={countVowel}
+          >
+            Count Vowels
           </button>
         </div>
         <textarea
